@@ -2,31 +2,35 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
+        android:id="@+id/scan"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Scan"
+        app:showAsAction="always" />
+    <item
         android:id="@+id/clear"
         android:icon="@drawable/ic_delete_white_24dp"
         android:title="Clear"
         app:showAsAction="always" />
     <item
-        android:id="@+id/newline"
-        android:title="Newline"
+        android:id="@+id/nickName"
+        android:checkable="false"
+        android:title="Set Name" />
+    <item
+        android:id="@+id/channel"
+        android:title="Set Channel" />
+    <item
+        android:id="@+id/address"
+        android:title="Set Address" />
+    <item
+        android:id="@+id/encryption"
+        android:title="Set Encryption"
         app:showAsAction="never" />
     <item
-        android:id="@+id/hex"
-        android:title="HEX Mode"
-        android:checkable="true"
-        app:showAsAction="never" />
-    <item
-        android:id="@+id/controlLines"
-        android:title="Control Lines"
-        android:checkable="true"
-        app:showAsAction="never" />
+        android:id="@+id/resetDefault"
+        android:title="Reset to default" />
     <item
         android:id="@+id/backgroundNotification"
         android:title="Notification if App in background"
         android:checkable="true"
-        app:showAsAction="never" />
-    <item
-        android:id="@+id/sendBreak"
-        android:title="Send BREAK"
         app:showAsAction="never" />
 </menu>
